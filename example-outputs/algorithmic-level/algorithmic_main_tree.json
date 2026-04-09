@@ -1,0 +1,759 @@
+{
+  "name": "example_circuit",
+  "type": "QuantumCircuit",
+  "num_qubits": 4,
+  "num_clbits": 4,
+  "resources": {
+    "total": 28,
+    "u": 13,
+    "cx": 10,
+    "barrier": 1,
+    "measure": 4
+  },
+  "children": [
+    {
+      "name": "h",
+      "type": "_SingletonHGate",
+      "num_qubits": 1,
+      "num_clbits": 0,
+      "params": [],
+      "resources": {
+        "total": 1,
+        "u": 1
+      },
+      "children": [
+        {
+          "name": "u",
+          "type": "UGate",
+          "num_qubits": 1,
+          "num_clbits": 0,
+          "params": [
+            1.5707963267948966,
+            0.0,
+            3.141592653589793
+          ],
+          "resources": {
+            "total": 1,
+            "u": 1
+          },
+          "children": [],
+          "abstraction_level": "primitive",
+          "abstraction_depth": 4
+        }
+      ],
+      "abstraction_level": "composite",
+      "abstraction_depth": 3
+    },
+    {
+      "name": "cx",
+      "type": "_SingletonCXGate",
+      "num_qubits": 2,
+      "num_clbits": 0,
+      "params": [],
+      "resources": {
+        "total": 1,
+        "cx": 1
+      },
+      "children": [],
+      "abstraction_level": "primitive",
+      "abstraction_depth": 4
+    },
+    {
+      "name": "qft",
+      "type": "QFTGate",
+      "num_qubits": 3,
+      "num_clbits": 0,
+      "params": [],
+      "resources": {
+        "total": 21,
+        "u": 12,
+        "cx": 9
+      },
+      "children": [
+        {
+          "name": "h",
+          "type": "_SingletonHGate",
+          "num_qubits": 1,
+          "num_clbits": 0,
+          "params": [],
+          "resources": {
+            "total": 1,
+            "u": 1
+          },
+          "children": [
+            {
+              "name": "u",
+              "type": "UGate",
+              "num_qubits": 1,
+              "num_clbits": 0,
+              "params": [
+                1.5707963267948966,
+                0.0,
+                3.141592653589793
+              ],
+              "resources": {
+                "total": 1,
+                "u": 1
+              },
+              "children": [],
+              "abstraction_level": "primitive",
+              "abstraction_depth": 4
+            }
+          ],
+          "abstraction_level": "composite",
+          "abstraction_depth": 3
+        },
+        {
+          "name": "cp",
+          "type": "CPhaseGate",
+          "num_qubits": 2,
+          "num_clbits": 0,
+          "params": [
+            1.5707963267948966
+          ],
+          "resources": {
+            "total": 5,
+            "u": 3,
+            "cx": 2
+          },
+          "children": [
+            {
+              "name": "p",
+              "type": "PhaseGate",
+              "num_qubits": 1,
+              "num_clbits": 0,
+              "params": [
+                0.7853981633974483
+              ],
+              "resources": {
+                "total": 1,
+                "u": 1
+              },
+              "children": [
+                {
+                  "name": "u",
+                  "type": "UGate",
+                  "num_qubits": 1,
+                  "num_clbits": 0,
+                  "params": [
+                    0.0,
+                    0.0,
+                    0.7853981633974483
+                  ],
+                  "resources": {
+                    "total": 1,
+                    "u": 1
+                  },
+                  "children": [],
+                  "abstraction_level": "primitive",
+                  "abstraction_depth": 4
+                }
+              ],
+              "abstraction_level": "composite",
+              "abstraction_depth": 3
+            },
+            {
+              "name": "cx",
+              "type": "_SingletonCXGate",
+              "num_qubits": 2,
+              "num_clbits": 0,
+              "params": [],
+              "resources": {
+                "total": 1,
+                "cx": 1
+              },
+              "children": [],
+              "abstraction_level": "primitive",
+              "abstraction_depth": 4
+            },
+            {
+              "name": "p",
+              "type": "PhaseGate",
+              "num_qubits": 1,
+              "num_clbits": 0,
+              "params": [
+                -0.7853981633974483
+              ],
+              "resources": {
+                "total": 1,
+                "u": 1
+              },
+              "children": [
+                {
+                  "name": "u",
+                  "type": "UGate",
+                  "num_qubits": 1,
+                  "num_clbits": 0,
+                  "params": [
+                    0.0,
+                    0.0,
+                    -0.7853981633974483
+                  ],
+                  "resources": {
+                    "total": 1,
+                    "u": 1
+                  },
+                  "children": [],
+                  "abstraction_level": "primitive",
+                  "abstraction_depth": 4
+                }
+              ],
+              "abstraction_level": "composite",
+              "abstraction_depth": 3
+            },
+            {
+              "name": "cx",
+              "type": "_SingletonCXGate",
+              "num_qubits": 2,
+              "num_clbits": 0,
+              "params": [],
+              "resources": {
+                "total": 1,
+                "cx": 1
+              },
+              "children": [],
+              "abstraction_level": "primitive",
+              "abstraction_depth": 4
+            },
+            {
+              "name": "p",
+              "type": "PhaseGate",
+              "num_qubits": 1,
+              "num_clbits": 0,
+              "params": [
+                0.7853981633974483
+              ],
+              "resources": {
+                "total": 1,
+                "u": 1
+              },
+              "children": [
+                {
+                  "name": "u",
+                  "type": "UGate",
+                  "num_qubits": 1,
+                  "num_clbits": 0,
+                  "params": [
+                    0.0,
+                    0.0,
+                    0.7853981633974483
+                  ],
+                  "resources": {
+                    "total": 1,
+                    "u": 1
+                  },
+                  "children": [],
+                  "abstraction_level": "primitive",
+                  "abstraction_depth": 4
+                }
+              ],
+              "abstraction_level": "composite",
+              "abstraction_depth": 3
+            }
+          ],
+          "abstraction_level": "composite",
+          "abstraction_depth": 3
+        },
+        {
+          "name": "cp",
+          "type": "CPhaseGate",
+          "num_qubits": 2,
+          "num_clbits": 0,
+          "params": [
+            0.7853981633974483
+          ],
+          "resources": {
+            "total": 5,
+            "u": 3,
+            "cx": 2
+          },
+          "children": [
+            {
+              "name": "p",
+              "type": "PhaseGate",
+              "num_qubits": 1,
+              "num_clbits": 0,
+              "params": [
+                0.39269908169872414
+              ],
+              "resources": {
+                "total": 1,
+                "u": 1
+              },
+              "children": [
+                {
+                  "name": "u",
+                  "type": "UGate",
+                  "num_qubits": 1,
+                  "num_clbits": 0,
+                  "params": [
+                    0.0,
+                    0.0,
+                    0.39269908169872414
+                  ],
+                  "resources": {
+                    "total": 1,
+                    "u": 1
+                  },
+                  "children": [],
+                  "abstraction_level": "primitive",
+                  "abstraction_depth": 4
+                }
+              ],
+              "abstraction_level": "composite",
+              "abstraction_depth": 3
+            },
+            {
+              "name": "cx",
+              "type": "_SingletonCXGate",
+              "num_qubits": 2,
+              "num_clbits": 0,
+              "params": [],
+              "resources": {
+                "total": 1,
+                "cx": 1
+              },
+              "children": [],
+              "abstraction_level": "primitive",
+              "abstraction_depth": 4
+            },
+            {
+              "name": "p",
+              "type": "PhaseGate",
+              "num_qubits": 1,
+              "num_clbits": 0,
+              "params": [
+                -0.39269908169872414
+              ],
+              "resources": {
+                "total": 1,
+                "u": 1
+              },
+              "children": [
+                {
+                  "name": "u",
+                  "type": "UGate",
+                  "num_qubits": 1,
+                  "num_clbits": 0,
+                  "params": [
+                    0.0,
+                    0.0,
+                    -0.39269908169872414
+                  ],
+                  "resources": {
+                    "total": 1,
+                    "u": 1
+                  },
+                  "children": [],
+                  "abstraction_level": "primitive",
+                  "abstraction_depth": 4
+                }
+              ],
+              "abstraction_level": "composite",
+              "abstraction_depth": 3
+            },
+            {
+              "name": "cx",
+              "type": "_SingletonCXGate",
+              "num_qubits": 2,
+              "num_clbits": 0,
+              "params": [],
+              "resources": {
+                "total": 1,
+                "cx": 1
+              },
+              "children": [],
+              "abstraction_level": "primitive",
+              "abstraction_depth": 4
+            },
+            {
+              "name": "p",
+              "type": "PhaseGate",
+              "num_qubits": 1,
+              "num_clbits": 0,
+              "params": [
+                0.39269908169872414
+              ],
+              "resources": {
+                "total": 1,
+                "u": 1
+              },
+              "children": [
+                {
+                  "name": "u",
+                  "type": "UGate",
+                  "num_qubits": 1,
+                  "num_clbits": 0,
+                  "params": [
+                    0.0,
+                    0.0,
+                    0.39269908169872414
+                  ],
+                  "resources": {
+                    "total": 1,
+                    "u": 1
+                  },
+                  "children": [],
+                  "abstraction_level": "primitive",
+                  "abstraction_depth": 4
+                }
+              ],
+              "abstraction_level": "composite",
+              "abstraction_depth": 3
+            }
+          ],
+          "abstraction_level": "composite",
+          "abstraction_depth": 3
+        },
+        {
+          "name": "h",
+          "type": "_SingletonHGate",
+          "num_qubits": 1,
+          "num_clbits": 0,
+          "params": [],
+          "resources": {
+            "total": 1,
+            "u": 1
+          },
+          "children": [
+            {
+              "name": "u",
+              "type": "UGate",
+              "num_qubits": 1,
+              "num_clbits": 0,
+              "params": [
+                1.5707963267948966,
+                0.0,
+                3.141592653589793
+              ],
+              "resources": {
+                "total": 1,
+                "u": 1
+              },
+              "children": [],
+              "abstraction_level": "primitive",
+              "abstraction_depth": 4
+            }
+          ],
+          "abstraction_level": "composite",
+          "abstraction_depth": 3
+        },
+        {
+          "name": "cp",
+          "type": "CPhaseGate",
+          "num_qubits": 2,
+          "num_clbits": 0,
+          "params": [
+            1.5707963267948966
+          ],
+          "resources": {
+            "total": 5,
+            "u": 3,
+            "cx": 2
+          },
+          "children": [
+            {
+              "name": "p",
+              "type": "PhaseGate",
+              "num_qubits": 1,
+              "num_clbits": 0,
+              "params": [
+                0.7853981633974483
+              ],
+              "resources": {
+                "total": 1,
+                "u": 1
+              },
+              "children": [
+                {
+                  "name": "u",
+                  "type": "UGate",
+                  "num_qubits": 1,
+                  "num_clbits": 0,
+                  "params": [
+                    0.0,
+                    0.0,
+                    0.7853981633974483
+                  ],
+                  "resources": {
+                    "total": 1,
+                    "u": 1
+                  },
+                  "children": [],
+                  "abstraction_level": "primitive",
+                  "abstraction_depth": 4
+                }
+              ],
+              "abstraction_level": "composite",
+              "abstraction_depth": 3
+            },
+            {
+              "name": "cx",
+              "type": "_SingletonCXGate",
+              "num_qubits": 2,
+              "num_clbits": 0,
+              "params": [],
+              "resources": {
+                "total": 1,
+                "cx": 1
+              },
+              "children": [],
+              "abstraction_level": "primitive",
+              "abstraction_depth": 4
+            },
+            {
+              "name": "p",
+              "type": "PhaseGate",
+              "num_qubits": 1,
+              "num_clbits": 0,
+              "params": [
+                -0.7853981633974483
+              ],
+              "resources": {
+                "total": 1,
+                "u": 1
+              },
+              "children": [
+                {
+                  "name": "u",
+                  "type": "UGate",
+                  "num_qubits": 1,
+                  "num_clbits": 0,
+                  "params": [
+                    0.0,
+                    0.0,
+                    -0.7853981633974483
+                  ],
+                  "resources": {
+                    "total": 1,
+                    "u": 1
+                  },
+                  "children": [],
+                  "abstraction_level": "primitive",
+                  "abstraction_depth": 4
+                }
+              ],
+              "abstraction_level": "composite",
+              "abstraction_depth": 3
+            },
+            {
+              "name": "cx",
+              "type": "_SingletonCXGate",
+              "num_qubits": 2,
+              "num_clbits": 0,
+              "params": [],
+              "resources": {
+                "total": 1,
+                "cx": 1
+              },
+              "children": [],
+              "abstraction_level": "primitive",
+              "abstraction_depth": 4
+            },
+            {
+              "name": "p",
+              "type": "PhaseGate",
+              "num_qubits": 1,
+              "num_clbits": 0,
+              "params": [
+                0.7853981633974483
+              ],
+              "resources": {
+                "total": 1,
+                "u": 1
+              },
+              "children": [
+                {
+                  "name": "u",
+                  "type": "UGate",
+                  "num_qubits": 1,
+                  "num_clbits": 0,
+                  "params": [
+                    0.0,
+                    0.0,
+                    0.7853981633974483
+                  ],
+                  "resources": {
+                    "total": 1,
+                    "u": 1
+                  },
+                  "children": [],
+                  "abstraction_level": "primitive",
+                  "abstraction_depth": 4
+                }
+              ],
+              "abstraction_level": "composite",
+              "abstraction_depth": 3
+            }
+          ],
+          "abstraction_level": "composite",
+          "abstraction_depth": 3
+        },
+        {
+          "name": "h",
+          "type": "_SingletonHGate",
+          "num_qubits": 1,
+          "num_clbits": 0,
+          "params": [],
+          "resources": {
+            "total": 1,
+            "u": 1
+          },
+          "children": [
+            {
+              "name": "u",
+              "type": "UGate",
+              "num_qubits": 1,
+              "num_clbits": 0,
+              "params": [
+                1.5707963267948966,
+                0.0,
+                3.141592653589793
+              ],
+              "resources": {
+                "total": 1,
+                "u": 1
+              },
+              "children": [],
+              "abstraction_level": "primitive",
+              "abstraction_depth": 4
+            }
+          ],
+          "abstraction_level": "composite",
+          "abstraction_depth": 3
+        },
+        {
+          "name": "swap",
+          "type": "_SingletonSwapGate",
+          "num_qubits": 2,
+          "num_clbits": 0,
+          "params": [],
+          "resources": {
+            "total": 3,
+            "cx": 3
+          },
+          "children": [
+            {
+              "name": "cx",
+              "type": "_SingletonCXGate",
+              "num_qubits": 2,
+              "num_clbits": 0,
+              "params": [],
+              "resources": {
+                "total": 1,
+                "cx": 1
+              },
+              "children": [],
+              "abstraction_level": "primitive",
+              "abstraction_depth": 4
+            },
+            {
+              "name": "cx",
+              "type": "_SingletonCXGate",
+              "num_qubits": 2,
+              "num_clbits": 0,
+              "params": [],
+              "resources": {
+                "total": 1,
+                "cx": 1
+              },
+              "children": [],
+              "abstraction_level": "primitive",
+              "abstraction_depth": 4
+            },
+            {
+              "name": "cx",
+              "type": "_SingletonCXGate",
+              "num_qubits": 2,
+              "num_clbits": 0,
+              "params": [],
+              "resources": {
+                "total": 1,
+                "cx": 1
+              },
+              "children": [],
+              "abstraction_level": "primitive",
+              "abstraction_depth": 4
+            }
+          ],
+          "abstraction_level": "composite",
+          "abstraction_depth": 3
+        }
+      ],
+      "abstraction_level": "composite",
+      "abstraction_depth": 3
+    },
+    {
+      "name": "barrier",
+      "type": "Barrier",
+      "num_qubits": 4,
+      "num_clbits": 0,
+      "params": [],
+      "resources": {
+        "total": 1,
+        "barrier": 1
+      },
+      "children": [],
+      "abstraction_level": "primitive",
+      "abstraction_depth": 4
+    },
+    {
+      "name": "measure",
+      "type": "_SingletonMeasure",
+      "num_qubits": 1,
+      "num_clbits": 1,
+      "params": [],
+      "resources": {
+        "total": 1,
+        "measure": 1
+      },
+      "children": [],
+      "abstraction_level": "primitive",
+      "abstraction_depth": 4
+    },
+    {
+      "name": "measure",
+      "type": "_SingletonMeasure",
+      "num_qubits": 1,
+      "num_clbits": 1,
+      "params": [],
+      "resources": {
+        "total": 1,
+        "measure": 1
+      },
+      "children": [],
+      "abstraction_level": "primitive",
+      "abstraction_depth": 4
+    },
+    {
+      "name": "measure",
+      "type": "_SingletonMeasure",
+      "num_qubits": 1,
+      "num_clbits": 1,
+      "params": [],
+      "resources": {
+        "total": 1,
+        "measure": 1
+      },
+      "children": [],
+      "abstraction_level": "primitive",
+      "abstraction_depth": 4
+    },
+    {
+      "name": "measure",
+      "type": "_SingletonMeasure",
+      "num_qubits": 1,
+      "num_clbits": 1,
+      "params": [],
+      "resources": {
+        "total": 1,
+        "measure": 1
+      },
+      "children": [],
+      "abstraction_level": "primitive",
+      "abstraction_depth": 4
+    }
+  ],
+  "abstraction_level": "algorithmic",
+  "abstraction_depth": 0
+}

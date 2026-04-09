@@ -60,7 +60,7 @@ NOTE: For GraphViz you need to additionally download its binaries and add it to 
     ```
     [You should run these after `cd` to the directory of the executables]
     [You should take these generated `.dat` tables and place them into a directory within your workspace]
-    [In this repository, they are stored in the `measurement_tables` repository]
+    [For example, store them in a directory named `measurement_tables`]
 
 ### Running the Demo 
 Execute the following to run the demo scripts:

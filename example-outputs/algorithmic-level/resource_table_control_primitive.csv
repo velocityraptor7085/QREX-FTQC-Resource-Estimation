@@ -1,0 +1,5 @@
+Name,Type,Qubits,Clbits,Occurrences,Total Ops,Abs Level,barrier,cx,measure,u
+u,UGate,1,0,14,1,primitive,0,0,0,1
+cx,_SingletonCXGate,2,0,11,1,primitive,0,1,0,0
+measure,_SingletonMeasure,1,1,5,1,primitive,0,0,1,0
+barrier,Barrier,4,0,1,1,primitive,1,0,0,0

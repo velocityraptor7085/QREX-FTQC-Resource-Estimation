@@ -1,0 +1,47 @@
+{
+  "circuit": {
+    "name": "logical_demo",
+    "num_qubits": 3,
+    "num_clbits": 0,
+    "depth": 556,
+    "width": 3,
+    "size": 1067
+  },
+  "gate_counts": {
+    "clifford": {
+      "h": 360,
+      "s": 113,
+      "sx": 78,
+      "sxdg": 78,
+      "x": 2,
+      "cx": 1,
+      "cz": 1
+    },
+    "non_clifford": {
+      "t": 306,
+      "tdg": 128
+    },
+    "non_unitary": {}
+  },
+  "totals": {
+    "total_ops": 1067,
+    "clifford": 633,
+    "non_clifford": 434,
+    "non_unitary": 0,
+    "unitary": 1067,
+    "t": 306,
+    "tdg": 128,
+    "t_like": 434
+  },
+  "raw_count_ops": {
+    "h": 360,
+    "t": 306,
+    "tdg": 128,
+    "s": 113,
+    "sx": 78,
+    "sxdg": 78,
+    "x": 2,
+    "cx": 1,
+    "cz": 1
+  }
+}

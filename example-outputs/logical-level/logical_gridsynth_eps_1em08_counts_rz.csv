@@ -1,0 +1,5 @@
+category,gate,count
+clifford,sx,8
+clifford,cy,1
+clifford,cz,1
+non_clifford,rz,9

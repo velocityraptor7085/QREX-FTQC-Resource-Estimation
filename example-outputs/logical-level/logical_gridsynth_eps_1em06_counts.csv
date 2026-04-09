@@ -1,0 +1,10 @@
+category,gate,count
+clifford,h,246
+clifford,sx,135
+clifford,sxdg,135
+clifford,s,3
+clifford,z,2
+clifford,cx,1
+clifford,cz,1
+non_clifford,tdg,200
+non_clifford,t,172

@@ -1,0 +1,4 @@
+method,epsilon,depth,size,clifford,non_clifford,t_like
+gridsynth,1e-06,17,28,12,16,0
+gridsynth,1e-07,17,25,12,13,0
+gridsynth,1e-08,12,19,10,9,0

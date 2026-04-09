@@ -1,0 +1,18 @@
+{
+  "pbc": {
+    "name": "backend_evolution_demo",
+    "depth": 77,
+    "width": 20,
+    "size": 370,
+    "type": "QuantumCircuit"
+  },
+  "operation_counts": {
+    "PauliEvolution": 360,
+    "pauli_product_measurement": 10
+  },
+  "totals": {
+    "total_ops": 370,
+    "pauli_evolution": 360,
+    "pauli_product_measurement": 10
+  }
+}

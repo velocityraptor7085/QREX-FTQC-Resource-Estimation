@@ -1,0 +1,53 @@
++-- example_circuit_control_flow (QuantumCircuit) [algorithmic] - 31 ops
+    |-- if_else (ControlFlowOp) [control_flow] - 2 ops
+    |   +-- if_else_block_0 (QuantumCircuit) [control_flow_block] - 2 ops
+    |       |-- h (_SingletonHGate) [composite] - 1 ops
+    |       |   +-- u (UGate) [primitive] - 1 ops
+    |       +-- cx (_SingletonCXGate) [primitive] - 1 ops
+    |-- h (_SingletonHGate) [composite] - 1 ops
+    |   +-- u (UGate) [primitive] - 1 ops
+    |-- qft (QFTGate) [composite] - 21 ops
+    |   |-- h (_SingletonHGate) [composite] - 1 ops
+    |   |   +-- u (UGate) [primitive] - 1 ops
+    |   |-- cp (CPhaseGate) [composite] - 5 ops
+    |   |   |-- p (PhaseGate) [composite] - 1 ops
+    |   |   |   +-- u (UGate) [primitive] - 1 ops
+    |   |   |-- p (PhaseGate) [composite] - 1 ops
+    |   |   |   +-- u (UGate) [primitive] - 1 ops
+    |   |   |-- p (PhaseGate) [composite] - 1 ops
+    |   |   |   +-- u (UGate) [primitive] - 1 ops
+    |   |   |-- cx (_SingletonCXGate) [primitive] - 1 ops
+    |   |   +-- cx (_SingletonCXGate) [primitive] - 1 ops
+    |   |-- cp (CPhaseGate) [composite] - 5 ops
+    |   |   |-- p (PhaseGate) [composite] - 1 ops
+    |   |   |   +-- u (UGate) [primitive] - 1 ops
+    |   |   |-- p (PhaseGate) [composite] - 1 ops
+    |   |   |   +-- u (UGate) [primitive] - 1 ops
+    |   |   |-- p (PhaseGate) [composite] - 1 ops
+    |   |   |   +-- u (UGate) [primitive] - 1 ops
+    |   |   |-- cx (_SingletonCXGate) [primitive] - 1 ops
+    |   |   +-- cx (_SingletonCXGate) [primitive] - 1 ops
+    |   |-- h (_SingletonHGate) [composite] - 1 ops
+    |   |   +-- u (UGate) [primitive] - 1 ops
+    |   |-- cp (CPhaseGate) [composite] - 5 ops
+    |   |   |-- p (PhaseGate) [composite] - 1 ops
+    |   |   |   +-- u (UGate) [primitive] - 1 ops
+    |   |   |-- p (PhaseGate) [composite] - 1 ops
+    |   |   |   +-- u (UGate) [primitive] - 1 ops
+    |   |   |-- p (PhaseGate) [composite] - 1 ops
+    |   |   |   +-- u (UGate) [primitive] - 1 ops
+    |   |   |-- cx (_SingletonCXGate) [primitive] - 1 ops
+    |   |   +-- cx (_SingletonCXGate) [primitive] - 1 ops
+    |   |-- h (_SingletonHGate) [composite] - 1 ops
+    |   |   +-- u (UGate) [primitive] - 1 ops
+    |   +-- swap (_SingletonSwapGate) [composite] - 3 ops
+    |       |-- cx (_SingletonCXGate) [primitive] - 1 ops
+    |       |-- cx (_SingletonCXGate) [primitive] - 1 ops
+    |       +-- cx (_SingletonCXGate) [primitive] - 1 ops
+    |-- cx (_SingletonCXGate) [primitive] - 1 ops
+    |-- measure (_SingletonMeasure) [primitive] - 1 ops
+    |-- barrier (Barrier) [primitive] - 1 ops
+    |-- measure (_SingletonMeasure) [primitive] - 1 ops
+    |-- measure (_SingletonMeasure) [primitive] - 1 ops
+    |-- measure (_SingletonMeasure) [primitive] - 1 ops
+    +-- measure (_SingletonMeasure) [primitive] - 1 ops

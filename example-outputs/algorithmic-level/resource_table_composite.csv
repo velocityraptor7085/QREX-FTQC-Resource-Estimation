@@ -1,0 +1,6 @@
+Name,Type,Qubits,Clbits,Occurrences,Total Ops,Abs Level,cx,u
+h,_SingletonHGate,1,0,4,1,composite,0,1
+qft,QFTGate,3,0,1,21,composite,9,12
+cp,CPhaseGate,2,0,3,5,composite,2,3
+p,PhaseGate,1,0,9,1,composite,0,1
+swap,_SingletonSwapGate,2,0,1,3,composite,3,0

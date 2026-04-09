@@ -1,0 +1,6 @@
+Name,Type,Qubits,Clbits,Occurrences,Total Ops,Abs Level,barrier,cx,measure,u
+h,_SingletonHGate,1,0,1,1,composite,0,0,0,1
+qft,QFTGate,3,0,1,21,composite,0,9,0,12
+cx,_SingletonCXGate,2,0,1,1,primitive,0,1,0,0
+barrier,Barrier,4,0,1,1,primitive,1,0,0,0
+measure,_SingletonMeasure,1,1,4,1,primitive,0,0,1,0
