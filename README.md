@@ -4,6 +4,7 @@
 <p>
   <img width="1900" height="763" alt="Image" src="https://github.com/user-attachments/assets/0c1e0bf5-765b-42a1-b4bb-0e1d304551e5" />
 </p>
+
 This repository implements an end-to-end fault-tolerant resource estimation tool built on top of [Qiskit](https://github.com/Qiskit/qiskit) and the [Bicycle Architecture Compiler](https://github.com/qiskit-community/bicycle-architecture-compiler).
 
 The core objective of this implementation is a focus on producing exact resource estimates for quantum algorithms (implemented as Qiskit `QuantumCircuit` objects) at various layers of the compilation pipeline to fault-tolerant architectures (such as [IBM's Gross Code](https://arxiv.org/abs/2506.03094) using schemes similar to that proposed in [A Game of Surface Codes](https://arxiv.org/abs/1808.02892)). 
