@@ -1,6 +1,8 @@
 # QREX (Quantum Resource EXplorer)
 ## An End-to-End Resource Estimation Tool for Fault-Tolerant Quantum Algorithms in Qiskit
-
+<p align="center">
+  <img width="500" alt="QREX-Logo" src="https://github.com/user-attachments/assets/b19f4b01-68af-421d-ad30-f592302b93dd" />
+</p>
 This repository implements an end-to-end fault-tolerant resource estimation tool built on top of [Qiskit](https://github.com/Qiskit/qiskit) and the [Bicycle Architecture Compiler](https://github.com/qiskit-community/bicycle-architecture-compiler).
 
 The core objective of this implementation is a focus on producing exact resource estimates for quantum algorithms (implemented as Qiskit `QuantumCircuit` objects) at various layers of the compilation pipeline to fault-tolerant architectures (such as [IBM's Gross Code](https://arxiv.org/abs/2506.03094) using schemes similar to that proposed in [A Game of Surface Codes](https://arxiv.org/abs/1808.02892)). 
