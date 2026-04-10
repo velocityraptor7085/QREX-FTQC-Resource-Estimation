@@ -74,3 +74,6 @@ After execution, the results will be saved to the following the subdirectories o
 - Backend integration: `example-outputs/backend-integration`
 
 Some sample outputs are provided based on running the script already in `example-outputs`. You may try modifying the demo script or implement your own circuits to test the end-to-end resource estimation pipeline.
+
+## License
+[MIT License](LICENSE)
