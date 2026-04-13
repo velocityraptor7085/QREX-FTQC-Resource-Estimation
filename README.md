@@ -37,6 +37,7 @@ First, ensure that Git, [rustup](https://rustup.rs/) and Python 3.8+ are install
 pip install -r requirements.txt
 ```
 NOTE: For GraphViz you need to additionally download its binaries and add it to your `PATH` (Refer [here](https://graphviz.org/download/)).
+
 2. Installing the Bicycle Compiler (optional; if you don't want backend resource estimates, you can comment out the `run_backend_demo()` function call in `end_to_end_demo.py`):
   - Clone the GitHub repository (in some other directory):
     ```bash
