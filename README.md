@@ -32,13 +32,13 @@ This is achieved by integrating resource estimates and visualization tools coupl
 
 ### Prerequisites and Dependencies:
 First, ensure that Git, [rustup](https://rustup.rs/) and Python 3.8+ are installed.
-1. Python dependencies:
+#### 1. Python dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 NOTE: For GraphViz you need to additionally download its binaries and add it to your `PATH` (Refer [here](https://graphviz.org/download/)).
 
-2. Installing the Bicycle Compiler (optional; if you don't want backend resource estimates, you can comment out the `run_backend_demo()` function call in `end_to_end_demo.py`):
+#### 2. Installing the Bicycle Compiler (optional; if you don't want backend resource estimates, you can comment out the `run_backend_demo()` function call in `end_to_end_demo.py`):
   - Clone the GitHub repository (in some other directory):
     ```bash
     git clone https://github.com/qiskit-community/bicycle-architecture-compiler.git
