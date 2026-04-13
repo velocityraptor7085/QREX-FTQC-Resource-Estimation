@@ -9,7 +9,7 @@ This repository implements an end-to-end fault-tolerant resource estimation tool
 
 The core objective of this implementation is a focus on producing exact resource estimates for quantum algorithms (implemented as Qiskit `QuantumCircuit` objects) at various layers of the compilation pipeline to fault-tolerant architectures (such as [IBM's Gross Code](https://arxiv.org/abs/2506.03094) using schemes similar to that proposed in [A Game of Surface Codes](https://arxiv.org/abs/1808.02892)). 
 
-This is achieved by integrating resource estimates and visualization tools coupled with the Qiskit transpiler at these different steps in the fault-tolerant compilation pipeline. These steps (as inspired by ) at can be summarized at a high level as:
+This is achieved by integrating resource estimates and visualization tools coupled with the Qiskit transpiler at these different steps in the fault-tolerant compilation pipeline. These steps can be summarized at a high level as:
 1. **Algorithmic level** (implemented in `algorithmic_level.py`): 
   - Refers to the abstraction layer of the quantum algorithm (`QuantumCircuit` object) itself.
   - Here, hierarchical resource estimation trees are constructed and visualized to show the user a hierarchical composition of their algorithm into subroutines and relative operation cost breakdowns between them (this would help them assess the most costly subroutines at the algorithmic level, before actually compiling the circuit). This is inspired by the DAGs used in [Qualtran](https://arxiv.org/abs/2409.04643) for resource estimation.
