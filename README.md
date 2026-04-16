@@ -19,7 +19,7 @@ This is achieved by integrating resource estimates and visualization tools coupl
 3. **Pauli-Based Computation (PBC) level** (implemented in `pbc_level.py`):
   - Refers to the Pauli-based Computation level primitives, namely product pauli rotations (implemented as `PauliEvolutionGate` operations) and product pauli measurements (implemented as `PauliProductMeasurement` operations). These are produced after applying the [`LitinskiTransformation` pass](https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.transpiler.passes.LitinskiTransformation) to a Clifford+Rz circuit.
   - The counts of these primitives can be visualized and counted in a similar manner to the Logical level.
-4. **Physical level** (implemented in `backend-integration.py`):
+4. **Physical level** (implemented in `backend_integration.py`):
   - Refers to the physical level resource estimates after compiling PBC circuits into a fault-tolerant quantum architecture (including quantum error correcting codes, magic state distillation overheads, etc.)
   - Relies on the Bicycle architecture compiler as a backend compiler. (The binaries need to be compiled from source following the instructions from the [GitHub repository](https://github.com/qiskit-community/bicycle-architecture-compiler)).
 
